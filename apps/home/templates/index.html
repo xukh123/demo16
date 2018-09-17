@@ -4,11 +4,10 @@
 {% endblock %}
 {% block page_css %}
     <style type="text/css">
-        #navigation_id{
-            background: #FF0000;
+        #navigation_id {
+            background: red;
         }
-
-            #navigation_id > li {
+        #navigation_id > li {
             float: left;
             padding: 10px;
         }
@@ -23,9 +22,10 @@
             font-weight: inherit;
         }
     </style>
+    {#   轮埠图样式#}
 
     <style type="text/css">
-                 .banner {
+        .banner {
             position: relative;
             overflow: auto;
             text-align: center;
@@ -76,10 +76,10 @@
             width: 100%;
             height: 500px;
         }
-
     </style>
+    {#    分类菜单样式#}
     <style type="text/css">
-                #cate_id {
+        #cate_id {
             height: 500px;
             position: relative;
         }
@@ -101,12 +101,15 @@
         .sub div {
             display: inline-block;
         }
-
     </style>
+
+
 {% endblock %}
+
 {% load staticfiles %}
+
 {% block page_jq %}
-        <script src="{% static 'js/unslider.min.js' %}"></script>
+    <script src="{% static 'js/unslider.min.js' %}"></script>
 
     <script type="text/javascript">
         $(function () {
@@ -124,6 +127,9 @@
         })
     </script>
 {% endblock %}
+
+
+
 {% block page_head %}
     {#    头部部分#}
     {#    1>登录注销  购物车 订单#}
@@ -140,4 +146,3 @@
 {% block page_footer %}
 
 {% endblock %}
-© 2018 GitHub, Inc.
